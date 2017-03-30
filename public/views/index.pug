@@ -1,0 +1,84 @@
+doctype html
+html(lang="en", data-framework="angularjs")
+    head
+        include partials/site_info.pug
+
+        title MEAN
+
+        style.
+            body {
+                background: #ddd;
+            }
+            .me-navbar .me-navbar-brand, .me-navbar md-button {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .me-navbar .me-navbar-brand {
+                color: #444;
+                font-size: 1.4em;
+            }
+            .me-navbar md-button.toolbar-button {
+                text-transform: capitalize !important;
+            }
+            .me-searchbar {
+                margin-left: 10px;
+                margin-right: 5px;
+                width: 60%;
+            }
+            .me-searchbar label, .me-searchbar .md-errors-spacer {
+                display: none;
+            }
+            .me-searchbar input {}
+            .me-page-container {
+                background-color: #ddd;
+            }
+            
+    body(ng-app="app", ng-controller="appCtrl as ctrl", ng-cloak)
+        include partials/visitor_notify.pug
+        // ==================== Content ====================
+        div(layout="column", flex="")
+            md-toolbar.md-menu-toolbar.me-navbar(layout="row", layout-align="center center")
+                section(layout-align="start center")
+                    h1.me-navbar-brand MEAN
+                section(layout-align="start center", layout-fill, flex)
+                    md-button.toolbar-button(aria-label="button 1")
+                        //-i.material-icons button 1
+                        |button 1
+                    md-button.toolbar-button(aria-label="button 2")
+                        //-i.material-icons button 2
+                        |button 2
+                    md-input-container.me-searchbar
+                        md-icon(md-svg-icon="magnify")
+                        input(ng-model="search", type="text", placeholder="Search")
+
+                section(layout-align="end center")
+                    md-button.md-raised.md-primary(aria-label="Click here")
+                        |Click Here
+                    md-button.toolbar-button(aria-label="button 3")
+                        //-i.material-icons button 3
+                        |button 3
+                    md-button.toolbar-button(aria-label="button 4")
+                        //-i.material-icons button 4
+                        |button 4
+
+        md-content.me-page-container
+            md-card.me-page
+                md-card-header
+                    md-card-header-text
+                        h2 Testing
+                
+
+        // ==================== Includes ==================== 
+        include partials/includes.pug
+
+        block scripts
+            script.
+                angular
+                .module("app", ["ngMaterial"])
+                .config(function($mdIconProvider, $mdThemingProvider) {
+                    $mdIconProvider
+                    .defaultIconSet("fonts/icons/mdi/mdi.svg", 24);
+                })
+                .controller("appCtrl", function() {
+
+                });

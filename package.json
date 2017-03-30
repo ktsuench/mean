@@ -1,0 +1,62 @@
+{
+  "name": "mean",
+  "version": "0.0.0-alpha",
+  "description": "mean",
+  "main": "server.js",
+  "keywords": [
+    "mean"
+  ],
+  "author": "ktsuench",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "bower": "1.8.0",
+    "express": "4.15.2",
+    "express-session": "1.15.1",
+    "less": "2.7.2",
+    "method-override": "2.3.7",
+    "mongodb": "2.2.25",
+    "mongoose": "4.9.1",
+    "pug": "2.0.0-beta11",
+    "ts-node": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.5",
+    "autoprefixer": "^6.7.3",
+    "chai": "^3.5.0",
+    "dotenv": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-if-else": "^1.0.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minifier": "^0.2.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "mocha": "3.2.0",
+    "pngquant": "^1.2.0",
+    "typescript": "^2.1.6",
+    "yargs": "^6.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktsuench/mean"
+  },
+  "engines": {
+    "node": "6.10"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./server.ts",
+    "test": "./node_modules/.bin/mocha -r ../../ts-node/register test/**/*.ts --reporter spec",
+    "test:html": "./node_modules/.bin/mocha -r ../../ts-node/register test/**/*.ts --reporter html"
+  }
+}

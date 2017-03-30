@@ -1,0 +1,93 @@
+# MEAN
+This project is a server using the MEAN stack running on Ubuntu 16.04 LTS in Vagrant.
+
+## Getting Started
+### Installing Vagrant
+*If you already have Vagrant set up and Ubuntu 16.04 LTS box installed, skip this section*
+
+You will need to have [Vagrant](https://www.vagrantup.com/intro/getting-started/index.html "Getting Started - Vagrant by HashiCorp") (minimum version 1.9.1) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads "Downloads - Oracle VM VirtualBox") (minimum version 5.1.14) installed to run this. Once those are installed, add the Ubuntu 16.04 LTS box by running the command `vagrant box add ubuntu/xenial64`.
+
+### To install server
+Clone this repository by running `git clone https://github.com/ktsuench/mean` and then `cd` into it and run `vagrant up`. It will take around 7 to 10 minutes to setup everything. Installs:
+- Nginx (newest version)
+- Node with NPM (v6.x)
+- MongoDB (v3.4)
+- PM2 (newest version)
+
+By default, changes made to the files will restart the server (PM2 setup to watch files)
+
+### Setup
+Rename the `template.env` file to `.env` and update the variables inside. That will serve as the environment variables being used on the server.
+
+## Issues
+### Symlink
+*Only applies if vagrant box was not installed as an admin/superuser when running `vagrant up`)*
+
+If you are having this issue:
+- Go to `.provision/bootstrap.sh` and uncomment the "*Install Sympm to link node modules properly*" section. 
+- Go to `.provision/startup.sh` and under "*Install Node Modules*" section change npm to sympm instead
+
+To properly link the node modules, [sympm](https://www.npmjs.com/package/sympm "sympm") is used as a workaround for symlink issues with Vagrant shared folders. This causes node modules not to be installed in the local working directory but rather under `~/.sympm/vagrant/node_modules` instead.
+
+## Using Vagrant
+Clone the files and in terminal `cd` to the directory.
+~~If the OS is outdated run: `vagrant box update`~~
+
+- To start server: `vagrant up`
+- To access server shell: `vagrant ssh`
+- *Only do this if you need a fresh server*
+
+    To remove server: `vagrant destroy`
+
+- *Use this instead when you need to shut down server*
+
+    To shutdown server: `vagrant halt`
+
+- ~~To put server to sleep: `vagrant suspend`~~
+- ~~To reload server: `vagrant reload`~~
+- To reload server to updated provisions: `vagrant reload --provision`
+
+The server should be up and running. To check, visit http://localhost:7500 in your browser.
+
+To make changes to the box and automate the process of installing environment dependencies, place the commands in the __Vagrantfile__.
+
+## Tutorials
+### Documentation
+- [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown Cheat Sheet")
+### Environment
+- [Vagrant](https://www.vagrantup.com/docs/ "Vagrant Docs")
+- [Vagrant Symbolic Linking Solution](http://blog.rudylee.com/2014/10/27/symbolic-links-with-vagrant-windows/ "Vagrant Symbolic Linking Solution")
+### Stack
+- [MongoDB Data Modeling](https://docs.mongodb.com/manual/core/data-modeling-introduction/ "MongoDB Data Modeling")
+- [MongoDB Connection](http://mongodb.github.io/node-mongodb-native/2.2/tutorials/connect/ "MongoDB Node Connection Tutorial")
+- [MongoDB Tutorial](https://www.tutorialspoint.com/mongodb/ "MongoDB Tutorial")
+- [Express](https://expressjs.com/en/4x/api.html "Express Web Application Framework")
+- [AngularJS](https://angularjs.org "AngularJS Site")
+- [Node.js](https://nodejs.org/dist/v6.10.0/docs/api/ "Node.js v6.10.0 Docs")
+### Backend
+- [TypeScript](https://www.typescriptlang.org/docs/tutorial.html "Typescript Tutorial")
+- [Mongoose](http://mongoosejs.com/docs/index.html "Mongoose Quick Start")
+- [PassportJS](http://passportjs.org/docs "PassportJS")
+### Frontend
+- [Pug](https://pugjs.org/api/getting-started.html "Pug HTML Template Engine Docs")
+- [LESS](http://lesscss.org/ "Less CSS Docs")
+- [Angular Material](https://material.angularjs.org/latest/getting-started "Angular Material Getting Started")
+- [Angular Material Theme Builder](http://mcg.mbitson.com/#!?mcgpalette0=%233d8af7&mcgpalette1=%23f7b83d&themename=ch "Angular Material Theme Builder")
+- [Material Design Icons](https://github.com/Templarian/MaterialDesign "Material Design Icons")
+
+    Licenses included with font file (license.txt from Material Design Repo and LICENSE from Google Material Design Icons)
+
+### Testing
+- [Mocha/Chai Cheat Sheet](https://gist.github.com/yoavniran/1e3b0162e1545055429e "Mocha/Chai Cheat Sheet")
+- [Mocha](https://mochajs.org/ "JS Test Framework running on Node.js")
+- *Used with Mocha (can be used with other testing frameworks)*
+
+    [Chai](http://chaijs.com/guide/styles/ "Chai BDD/TDD Assertion Lib for Node.js")
+
+### Dependency Manager
+- [npm](https://docs.npmjs.com/ "npm Documentation")
+- [Bower](https://bower.io/ "Bower Web Package Manager")
+### Task Runner
+- [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/API.md "Gulp Task Runner")
+### Version Control
+- [Git](https://git-scm.com/docs "Git Reference Manual")
