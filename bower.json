@@ -1,5 +1,5 @@
 {
-  "name": "mean",
+  "name": "mean-vagrant",
   "version": "0.0.0-alpha",
   "dependencies": {
     "angular-material": "latest"

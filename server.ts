@@ -37,8 +37,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //var key = process.env.COOKIE_SECRET || "gf'BTtV4E%^A%!/>s$rDk8#@cQqkV#739x+k";
 // refer to the express-session docs: https://github.com/expressjs/session
 /*app.use(session({
-    path: '/',
-    name: 'mean',
+    aath: '/',
+    name: 'mean-vagrant',
     secret: key,
     httpOnly: true,
     secure: false,

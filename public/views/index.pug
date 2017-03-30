@@ -3,33 +3,33 @@ html(lang="en", data-framework="angularjs")
     head
         include partials/site_info.pug
 
-        title MEAN
+        title MEAN-Vagrant
 
         style.
             body {
                 background: #ddd;
             }
-            .me-navbar .me-navbar-brand, .me-navbar md-button {
+            .mv-navbar .mv-navbar-brand, .mv-navbar md-button {
                 padding-left: 20px !important;
                 padding-right: 20px !important;
             }
-            .me-navbar .me-navbar-brand {
+            .mv-navbar .mv-navbar-brand {
                 color: #444;
                 font-size: 1.4em;
             }
-            .me-navbar md-button.toolbar-button {
+            .mv-navbar md-button.toolbar-button {
                 text-transform: capitalize !important;
             }
-            .me-searchbar {
+            .mv-searchbar {
                 margin-left: 10px;
                 margin-right: 5px;
                 width: 60%;
             }
-            .me-searchbar label, .me-searchbar .md-errors-spacer {
+            .mv-searchbar label, .mv-searchbar .md-errors-spacer {
                 display: none;
             }
-            .me-searchbar input {}
-            .me-page-container {
+            .mv-searchbar input {}
+            .mv-page-container {
                 background-color: #ddd;
             }
             
@@ -37,9 +37,9 @@ html(lang="en", data-framework="angularjs")
         include partials/visitor_notify.pug
         // ==================== Content ====================
         div(layout="column", flex="")
-            md-toolbar.md-menu-toolbar.me-navbar(layout="row", layout-align="center center")
+            md-toolbar.md-menu-toolbar.mv-navbar(layout="row", layout-align="center center")
                 section(layout-align="start center")
-                    h1.me-navbar-brand MEAN
+                    h1.mv-navbar-brand MEAN-Vagrant
                 section(layout-align="start center", layout-fill, flex)
                     md-button.toolbar-button(aria-label="button 1")
                         //-i.material-icons button 1
@@ -47,7 +47,7 @@ html(lang="en", data-framework="angularjs")
                     md-button.toolbar-button(aria-label="button 2")
                         //-i.material-icons button 2
                         |button 2
-                    md-input-container.me-searchbar
+                    md-input-container.mv-searchbar
                         md-icon(md-svg-icon="magnify")
                         input(ng-model="search", type="text", placeholder="Search")
 
@@ -61,8 +61,8 @@ html(lang="en", data-framework="angularjs")
                         //-i.material-icons button 4
                         |button 4
 
-        md-content.me-page-container
-            md-card.me-page
+        md-content.mv-page-container
+            md-card.mv-page
                 md-card-header
                     md-card-header-text
                         h2 Testing
