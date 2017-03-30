@@ -21,7 +21,9 @@ Rename the `template.env` file to `.env` and update the variables inside. That w
 
 ## Issues
 ### Symlink
-*Only applies if vagrant box was not installed as an admin/superuser when running `vagrant up`)*
+*Only applies if vagrant box was not installed as an admin/superuser when running `vagrant up`*
+
+__ONGOING ISSUE:__ If you are using Typescript, it will not compile if you need to use typings (i.e. Node). Will find a fix for it soon.
 
 If you are having this issue:
 - Go to `.provision/bootstrap.sh` and uncomment the "*Install Sympm to link node modules properly*" section. 
