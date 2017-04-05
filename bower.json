@@ -2,6 +2,7 @@
   "name": "mean-vagrant",
   "version": "0.0.0-alpha",
   "dependencies": {
-    "angular-material": "latest"
+    "angular": "^1.6.4",
+    "angular-material": "^1.1.3"
   }
 }
