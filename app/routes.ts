@@ -2,8 +2,6 @@
 const ENV_DEV:String = "DEVELOPMENT";
 
 // modules ========================================================================================
-var session = require('express-session');
-var crypto:Crypto = require('crypto');
 var User = require('./models/user_model.ts');
 var assert = require('assert');
 
