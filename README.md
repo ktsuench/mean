@@ -83,6 +83,7 @@ To make changes to the box and automate the process of installing environment de
 ### Version Control
 - [Git](https://git-scm.com/docs "Git Reference Manual")
 
-##License
+## License
 Refer to the LICENSE file in this repository.
+
 [MIT](https://opensource.org/licenses/MIT "MIT License")
