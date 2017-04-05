@@ -69,27 +69,20 @@ To make changes to the box and automate the process of installing environment de
 ### Backend
 - [TypeScript](https://www.typescriptlang.org/docs/tutorial.html "Typescript Tutorial")
 - [Mongoose](http://mongoosejs.com/docs/index.html "Mongoose Quick Start")
-- [PassportJS](http://passportjs.org/docs "PassportJS")
 ### Frontend
 - [Pug](https://pugjs.org/api/getting-started.html "Pug HTML Template Engine Docs")
-- [LESS](http://lesscss.org/ "Less CSS Docs")
 - [Angular Material](https://material.angularjs.org/latest/getting-started "Angular Material Getting Started")
 - [Angular Material Theme Builder](http://mcg.mbitson.com/#!?mcgpalette0=%233d8af7&mcgpalette1=%23f7b83d&themename=ch "Angular Material Theme Builder")
 - [Material Design Icons](https://github.com/Templarian/MaterialDesign "Material Design Icons")
 
     Licenses included with font file (license.txt from Material Design Repo and LICENSE from Google Material Design Icons)
 
-### Testing
-- [Mocha/Chai Cheat Sheet](https://gist.github.com/yoavniran/1e3b0162e1545055429e "Mocha/Chai Cheat Sheet")
-- [Mocha](https://mochajs.org/ "JS Test Framework running on Node.js")
-- *Used with Mocha (can be used with other testing frameworks)*
-
-    [Chai](http://chaijs.com/guide/styles/ "Chai BDD/TDD Assertion Lib for Node.js")
-
 ### Dependency Manager
 - [npm](https://docs.npmjs.com/ "npm Documentation")
 - [Bower](https://bower.io/ "Bower Web Package Manager")
-### Task Runner
-- [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/API.md "Gulp Task Runner")
 ### Version Control
 - [Git](https://git-scm.com/docs "Git Reference Manual")
+
+##License
+Refer to the LICENSE file in this repository.
+[MIT](https://opensource.org/licenses/MIT "MIT License")
