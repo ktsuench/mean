@@ -1,4 +1,4 @@
-# MEAN-Vagranti
+# MEAN-Vagrant
 This project is a server using the MEAN stack running on Ubuntu 16.04 LTS in Vagrant.
 
 On startup of the server, the application and associated processes will be started automatically. The application will be available on localhost:7500. By using this, there is a unified development environment between developers on the same team and Vagrant allows sharing the environment online so that changes to the environment can be synced in real time between developers.
@@ -10,7 +10,9 @@ On startup of the server, the application and associated processes will be start
 You will need to have [Vagrant](https://www.vagrantup.com/intro/getting-started/index.html "Getting Started - Vagrant by HashiCorp") (minimum version 1.9.1) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads "Downloads - Oracle VM VirtualBox") (minimum version 5.1.14) installed to run this. Once those are installed, add the Ubuntu 16.04 LTS box by running the command `vagrant box add ubuntu/xenial64`.
 
 ### To install server
-First fork this repository and then clone your forked repository by running `git clone https://github.com/<username>/mean-vagrant`. Then `cd` into the cloned repository and run `vagrant up`. It will take around 7 to 10 minutes to setup everything. Installs:
+First fork this repository and then clone your forked repository by running `git clone https://github.com/<username>/mean-vagrant`. Then `cd` into the cloned repository and run `vagrant up`.
+
+Installs:
 - Nginx (newest version)
 - Node with NPM (v6.x)
 - MongoDB (v3.4)
