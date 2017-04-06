@@ -1,7 +1,7 @@
 # MEAN-Vagranti
 This project is a server using the MEAN stack running on Ubuntu 16.04 LTS in Vagrant.
 
-On startup of the server, the application and associated processes will be started automatically. The application will be available on localhost:7500. By using this, there is a unified development environment between developers on the same team and Vagrant allows sharing the box online so that changes to the box can be synced in real time between developers.
+On startup of the server, the application and associated processes will be started automatically. The application will be available on localhost:7500. By using this, there is a unified development environment between developers on the same team and Vagrant allows sharing the environment online so that changes to the environment can be synced in real time between developers.
 
 ## Getting Started
 ### Installing Vagrant
