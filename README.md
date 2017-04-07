@@ -71,7 +71,6 @@ To make changes to the box and automate the process of installing environment de
 - [AngularJS](https://angularjs.org "AngularJS Site")
 - [Node.js](https://nodejs.org/dist/v6.10.0/docs/api/ "Node.js v6.10.0 Docs")
 ### Backend
-- [TypeScript](https://www.typescriptlang.org/docs/tutorial.html "Typescript Tutorial")
 - [Mongoose](http://mongoosejs.com/docs/index.html "Mongoose Quick Start")
 ### Frontend
 - [Pug](https://pugjs.org/api/getting-started.html "Pug HTML Template Engine Docs")

@@ -15,5 +15,4 @@ bower install --allow-root
 
 ## --- Start up Server Process --- ##
 cd /vagrant
-sudo pm2 start server.ts --watch
-sudo pm2 save
+sudo pm2 start server.js --watch

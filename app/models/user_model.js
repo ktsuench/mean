@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 // model definition ===============================================================================
 // define string setter
-function lowerCase(str:String):String {
+function lowerCase(str) {
     return str.toLowerCase();
 }
 
@@ -21,9 +21,3 @@ let userModel = mongoose.model('User', userSchema);
 
 // node export allows us to pass model to other files when it is called
 module.exports = userModel;
-
-// export for mocha tests
-export function UserModel(obj) {
-    return new userModel(obj);
-}
-export default UserModel({});

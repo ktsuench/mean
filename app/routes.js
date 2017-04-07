@@ -1,8 +1,8 @@
 // constants ======================================================================================
-const ENV_DEV:String = "DEVELOPMENT";
+var ENV_DEV = "DEVELOPMENT";
 
 // modules ========================================================================================
-var User = require('./models/user_model.ts');
+var User = require('./models/user_model.js');
 var assert = require('assert');
 
 // routing ========================================================================================
@@ -18,7 +18,7 @@ module.exports = function(app) {
      * @param next Callback function (next action to take)
      */
     app.all('/*', function(req, res, next) {
-        let passURLs:String[] = [];
+        let passURLs = [];
 
         // only allow debug routes to process if environment is development
         if(process.env.ENVIRONMENT == ENV_DEV){
@@ -40,10 +40,10 @@ module.exports = function(app) {
     // Only works if environment is development
     if(process.env.ENVIRONMENT == ENV_DEV){
         app.get('/debug/usermodel', function(req, res) {
-            let fn:String = "John";
-            let ln:String = "Doe";
-            let email:String = "JohnDoe@hisNeighbors.Place";
-            let gender:String = "Male";
+            let fn = "John";
+            let ln = "Doe";
+            let email = "JohnDoe@hisNeighbors.Place";
+            let gender = "Male";
             
             let john = new User({
                 firstname: fn,

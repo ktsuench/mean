@@ -41,9 +41,5 @@ sudo mkdir data/db
 ## uncomment this section only if you cannot run this script in admin/superuser mode ##
 ## sudo npm install -g sympm
 
-## --- Install missing Typescript files for PM2 Process Manager --- ##
-cd /usr/lib/node_modules/pm2/node_modules
-sudo npm install typescript ts-node
-
 ## --- Install NPM Global libraries --- ##
 sudo npm install -g bower gulp rimraf

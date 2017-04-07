@@ -38,7 +38,7 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(express.static(__dirname + '/public'));
 
 // routes =========================================================================================
-require('./app/routes.ts')(app); // configure our routes
+require('./app/routes.js')(app); // configure our routes
 
 // start app ======================================================================================
 app.listen(app.get('port'), function() {
