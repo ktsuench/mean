@@ -37,8 +37,8 @@ To properly link the node modules, [sympm](https://www.npmjs.com/package/sympm "
 
 ## Using Vagrant
 Clone the files and in terminal `cd` to the directory.
-~~If the OS is outdated run: `vagrant box update`~~
 
+- ~~If the OS is outdated run: `vagrant box update`~~
 - To start server: `vagrant up`
 - To access server shell: `vagrant ssh`
 - *Only do this if you need a fresh server*
