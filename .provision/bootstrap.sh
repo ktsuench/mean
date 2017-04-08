@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## --- Update OS --- ##
-#sudo apt-get update
+sudo apt-get update
 #sudo apt-get upgrade -y
 
 ## --- Install programming essential bundles --- ##
