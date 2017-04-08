@@ -18,7 +18,7 @@ Installs:
 - MongoDB (v3.4)
 - PM2 (newest version)
 
-By default, changes made to the files will restart the server (PM2 setup to watch files)
+By default, changes made to the files will restart the server (PM2 set up to watch files)
 
 ### Setup
 Rename the `template.env` file to `.env` and update the variables inside. That will serve as the environment variables being used on the server.
@@ -80,7 +80,7 @@ To make changes to the box and automate the process of installing environment de
 
     Licenses included with font file (license.txt from Material Design Repo and LICENSE from Google Material Design Icons)
 
-### Dependency Manager
+### Dependency Management
 - [npm](https://docs.npmjs.com/ "npm Documentation")
 - [Bower](https://bower.io/ "Bower Web Package Manager")
 ### Version Control
