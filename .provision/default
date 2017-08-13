@@ -15,8 +15,12 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 
-    # if you want to serve static files, uncomment the following section
-    #location /static {
-    #	alias /vagrant/static/;
-    #}
+    location ~* /img/(.)*.(gif|jpg|png)$ {
+        alias /vagrant/public/$1;
+        expires 30d;
+    }
+
+    location ~* /(css|js)/(.)*.(css|js)$ {
+        alias /vagrant/public/$1;
+    }
 }
